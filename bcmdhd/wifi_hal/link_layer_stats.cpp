@@ -236,7 +236,7 @@ protected:
             return NL_SKIP;
         }
  		wifi_iface_stat *iface_stat = NULL;
- 		iface_stat = (wifi_iface_stat *)((char* )data + sizeof(wifi_radio_stat));
+ 		iface_stat = (wifi_iface_stat *)((char* )data + sizeof(wifi_radio_stat_internal));
 
 		if(*mHandler.on_link_stats_results == NULL) {
 			ALOGE("*mHandler.on_link_stats_results is NULL");
